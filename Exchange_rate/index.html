@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange Rate App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="heading">Exchange API - App</h1>
+      </div>
+      <div class="main">
+        <div class="input-field">
+          <form action="#" id="form-input">
+            <input
+              type="number"
+              class="amount"
+              id="amount"
+              placeholder="Amount"
+            />
+          </form>
+        </div>
+        <div class="select-form">
+          <select name="first-currency" class="currency" id="firstCurrency">
+            <option selected>EUR</option>
+            <option>USD</option>
+            <option>TRY</option>
+            <option>AZN</option>
+            <option>RUB</option>
+          </select>
+          <select name="second-currency" id="secondCurrency" class="currency">
+            <option>AZN</option>
+            <option selected>TRY</option>
+            <option>EUR</option>
+            <option>RUB</option>
+            <option>USD</option>
+          </select>
+        </div>
+      </div>
+      <div class="result">
+        <div class="result-header" id="result-header">
+          <span class="display" id="currency-first-display">EUR</span>
+          <span>-</span>
+          <span class="display" id="currency-second-display">TRY</span>
+        </div>
+        <div class="result-amount" id="result-amount">
+          <input
+            type="text"
+            class="output"
+            id="output"
+            placeholder="Converted amount"
+            readonly
+          />
+        </div>
+      </div>
+    </div>
+    <script src="ui.js"></script>
+    <script src="currency.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
